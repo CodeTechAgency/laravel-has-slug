@@ -2,8 +2,8 @@
 
 Laravel package for managing models' slugs.
 
-[![Latest version](https://img.shields.io/github/release/CodeTechPt/laravel-sluggable?style=flat-square)](https://github.com/CodeTechPt/laravel-sluggable/releases)
-[![GitHub license](https://img.shields.io/github/license/CodeTechPt/laravel-sluggable?style=flat-square)](https://github.com/CodeTechPt/laravel-sluggable/blob/master/LICENSE)
+[![Latest version](https://img.shields.io/github/release/CodeTechAgency/laravel-sluggable?style=flat-square)](https://github.com/CodeTechAgency/laravel-sluggable/releases)
+[![GitHub license](https://img.shields.io/github/license/CodeTechAgency/laravel-sluggable?style=flat-square)](https://github.com/CodeTechAgency/laravel-sluggable/blob/master/LICENSE)
 
 
 ## Installation
@@ -51,7 +51,7 @@ class Theme extends Model
 
 ## License
 
-**codetech/laravel-sluggable** is open-sourced software licensed under the [MIT license](https://github.com/CodeTechPt/laravel-sluggable/blob/master/LICENSE).
+**codetech/laravel-sluggable** is open-sourced software licensed under the [MIT license](https://github.com/CodeTechAgency/laravel-sluggable/blob/master/LICENSE).
 
 
 ## About CodeTech
