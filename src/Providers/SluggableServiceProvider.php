@@ -2,7 +2,7 @@
 
 namespace CodeTech\Sluggable\Providers;
 
-use Carbon\Laravel\ServiceProvider;
+use Illuminate\Support\ServiceProvider;
 
 class SluggableServiceProvider extends ServiceProvider
 {
