@@ -13,7 +13,9 @@ class HasSlugObserver
      */
     public function saving($model)
     {
-        $modelSlug = empty($model->slug) ? '' : Str::slug($model->slug);
+        $sluggable = $model->sluggableAttribute();
+
+        $modelSlug = empty($model->{$sluggable}) ? '' : Str::slug($model->{$sluggable});
 
         $index  = 1;
         $suffix = '';
@@ -24,13 +26,13 @@ class HasSlugObserver
             $suffix = '-' . $index;
             $index++;
 
-            $matches = $model::where('slug', $slug);
+            $matches = $model::where($sluggable, $slug);
 
             if ($model->id !== null) {
                 $matches->where('id', '!=', $model->id);
             }
         } while ($matches->count());
 
-        $model->slug = $slug;
+        $model->{$sluggable} = $slug;
     }
 }
