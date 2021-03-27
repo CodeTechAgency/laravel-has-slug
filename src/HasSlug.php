@@ -11,7 +11,7 @@ trait HasSlug
      */
     public function initializeHasSlug()
     {
-        $this->fillable[] = 'slug';
+        $this->fillable[] = $this->sluggableAttribute();
     }
 
     /**
@@ -22,5 +22,15 @@ trait HasSlug
     public static function bootHasSlug()
     {
         static::observe(HasSlugObserver::class);
+    }
+
+    /**
+     * The sluggable attribute name,
+     *
+     * @return string
+     */
+    public function sluggableAttribute()
+    {
+        return 'slug';
     }
 }
