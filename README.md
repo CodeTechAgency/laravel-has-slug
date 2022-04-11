@@ -1,3 +1,6 @@
+![laravel-sluggable-repo-banner](https://user-images.githubusercontent.com/17640929/162696686-4395bd00-cdaa-49fc-94f3-ed60cacbaf8b.png)
+
+
 # Laravel Sluggable
 
 Laravel package for managing models' slugs.
